@@ -1,0 +1,183 @@
+<!-- 
+    "Introducción al HTML"
+    1° Preparaduría de Sistemas de Información
+    Universidad Metropolitana. Trimestre 2324-3
+    Hecho por: Andres Goncalves
+ -->
+
+<!-- Esto es un comentario -->
+
+<!-- Esta etiqueta DOCTYPE indica el inicio de un documento de código HTML5 -->
+<!DOCTYPE html>
+<!-- La etiqueta <html> envuelve todo el código de la página,
+    el atributo lang indica el idioma (es = español) -->
+<html lang="es">
+  <!-- La etiqueta <head> envuelve los metadatos de la página
+    (en este caso: codificación UTF-8, escalado automático, y título de la pestaña) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identidad Unimetana</title>
+  </head>
+  <!-- La etiqueta <body> envuelve todo el contenido visible de la página -->
+  <body>
+    <!-- Estamos tomando como referencia la página https://www.unimet.edu.ve/estructura/ -->
+
+    <!-- La etiqueta <nav> es un contenedor general que significa "navegación"
+      Se usa para agrupar los principales enlaces de la página. -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./">Inicio</a>
+        </li>
+        <li>
+          <!-- Para hacer rutas relativas a la carpeta actual, empezamos la ruta con ./ -->
+          <a href="./subcarpeta/cobranzas.html">Cobranzas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Primera sección -->
+
+    <!-- La etiqueta <section> es un contenedor sencillo,
+        pero indica que su contenido es una sección de la página -->
+    <section>
+      <!-- La etiqueta <h1> indica un título de primer nivel (principal),
+          sólo debe haber 1 título principal por página -->
+      <h1>Identidad unimetana</h1>
+      <!-- La etiqueta <p> contiene un párrafo de texto -->
+      <p>Vivir en comunidad, nuestra identidad cultural.</p>
+      <!-- La etiqueta <button> sirve para invocar alguna acción cuando se le hace click,
+          veremos su utilidad en la clase de JavaScript -->
+      <button>Conocer más</button>
+      <!-- La etiqueta <div> es un contenedor sencillo genérico,
+            no tiene significado especial más allá de agrupar contenido -->
+      <div>
+        <!-- La etiqueta <img/> muestra una imagen, referenciada por el atributo src.
+            Si la imagen no puede cargarse, se muestra el contenido del atributo alt.
+            Se puede colocar un URL de imagen de internet en el atributo src,
+            o una dirección de archivo local (debe iniciar con un . para buscar el archivo en la carpeta actual) -->
+        <img src="./imagen.jpeg" alt="Imagen de la unimet" />
+      </div>
+    </section>
+
+    <!-- Segunda sección -->
+    <section>
+      <!-- Podemos dividir la sección en dos partes (misión y visión) agrupadas en etiquetas div-->
+      <!-- Primera parte (misión) -->
+      <div>
+        <!-- Título de segundo nivel (subtítulo) -->
+        <h2>Misión</h2>
+        <!-- Párrafo de texto de la sección -->
+        <p>
+          Formar profesionales reconocidos por su alto nivel ético, sólida
+          formación integral, por su capacidad emprendedora, de liderazgo y de
+          trabajo en equipo, con dominio de al menos un segundo idioma, y
+          comprometidos con el desarrollo del sector productivo y de la sociedad
+          en general.
+        </p>
+      </div>
+      <!-- Segunda parte (visión) -->
+      <div>
+        <h2>Visión</h2>
+        <p>
+          Formar profesionales reconocidos por su alto nivel ético, sólida
+          formación integral, por su capacidad emprendedora, de liderazgo y de
+          trabajo en equipo, con dominio de al menos un segundo idioma, y
+          comprometidos con el desarrollo del sector productivo y de la sociedad
+          en general.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tercera sección -->
+    <section>
+      <!-- Título de la sección -->
+      <h2>Valores rectores</h2>
+      <!-- Párrafo de texto de la sección -->
+      <p>
+        El funcionamiento institucional se fundamenta en una política de
+        mejoramiento continuo. Tal política implica que toda la comunidad
+        universitaria debe practicar y promover en su desempeño de todos los
+        días los valores y actitudes siguientes:
+      </p>
+      <!-- Informción desplegable (etiqueta <details>) -->
+      <details>
+        <!-- El <summary> es el texto que se mjestra antes de desplegar el contenido -->
+        <summary>Experiencia</summary>
+        <!-- Lo que está fuera de <summary> es el contenido oculto que se despliega -->
+
+        <!-- La etiqueta <ul> significa Unordered Lista (lista no-ordenada),
+          sirve para mostrar información con bullet points.
+          También existe una etiqueta <ol> para listas ordenadas (enumerada, como: 1,2,3,...; a,b,c,...; etc) -->
+        <ul>
+          <!-- Cada etiqueta <li> es un List Item (elemento de lista), es decir, un bullet point-->
+          <li>
+            Enseñamos con excelencia académica con el propósito de que nuestros
+            egresados tengan una formación de clase mundial.
+          </li>
+          <li>
+            Investigamos con excelencia mediante las mejores prácticas para
+            generar propuestas e ideas útiles para la sociedad.
+          </li>
+          <li>
+            Administramos los recursos de la universidad mediante procesos
+            ágiles y eficientes que nos garanticen la sustentabilidad
+            financiera.
+          </li>
+          <li>
+            Demostramos vocación de servicio con calidad en todas nuestras
+            actividades internas y externas.
+          </li>
+        </ul>
+      </details>
+    </section>
+    <!-- La etiqueta <hr/> hace un divisor o línea horizontal en la página (Horizontal Ruler)  -->
+    <hr />
+
+    <!-- Cuarta sección, tomada de https://www.unimet.edu.ve/estructura/ -->
+    <section>
+      <!-- Título de sección -->
+      <h2>Rectorado</h2>
+
+      <!-- La etiqueta <span> sirve para agrupar texto en linea (inline), es decir, sin crear una nueva sección o bloque horizontal.
+          En este caso, agrupamos para cambiar el color de fondo de las palabras contenidas -->
+      <!-- La etiqueta <em> (emphasys) coloca en cursivas el texto contenido. 
+        Al igual que la etiqueta <span>, es un elemento inline -->
+      <!-- La etiqueta <br/> hace un salto de línea dentro del texto. -->
+      <p>
+        El rector dirige y coordina el desarrollo de las actividades
+        universitarias, de acuerdo
+        <span style="background-color: cyan"
+          >con los principios que sustenta</span
+        >
+        la institución, y vela por su cumplimiento. Asimismo, designa a los
+        decanos, directores de escuelas, directores de servicios, jefes de
+        departamentos y miembros del personal docente o de investigación, oyendo
+        previamente la opinión del <em>Consejo Académico</em>.<br />
+        En consulta con el Vicerrectorado Administrativo, nombra el personal
+        administrativo. Además, otra de sus atribuciones es la de conferir los
+        Títulos y Grados y la expedición de los certificados de competencia que
+        otorgue la universidad, debidamente refrendados por el secretario
+        general, previo el cumplimiento de los requisitos legales.
+      </p>
+      <!-- La etiqueta <strong> coloca en negritas el texto contenido. -->
+      <p>
+        De igual forma, presenta al <strong>Consejo Superior</strong> los
+        informes que sean solicitados, aplica medidas disciplinarias de acuerdo
+        con las disposiciones reglamentarias, y mantiene las relaciones con las
+        autoridades, organismos oficiales e instituciones oficiales y privadas.
+      </p>
+      <div>
+        <span>María Isabel Guinand, rectora:</span>
+        <!-- La etiqueta <a> sirve para hacer enlaces. 
+          El atributo href indica el URL destino, y el contenido de la etiqueta es el texto que se muestra -->
+        <a href="https://unimet.edu.ve">Página Web Unimet</a> /
+        <!-- Los links con el prefijo mailto: son enlaces a correo electrónico -->
+        <a href="mailto:mguinand@unimet.edu.ve">mguinand@unimet.edu.ve</a> /
+        <!-- Los links con el prefijo tel: son enlaces a números de teléfono -->
+        <a href="tel:+584141234567">04141234567</a>
+      </div>
+    </section>
+  </body>
+</html>

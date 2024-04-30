@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cobranzas</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <!-- Para ir a un archivo en la carpeta superior, se escribe ../ -->
+          <a href="../">Inicio</a>
+        </li>
+        <li>
+          <a href="./cobranzas.html">Cobranzas</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Cobranzas</h1>
+
+    <!-- La etiqueta de tabla puede tener 3 secciones:
+      <thead> (encabezado de la tabla)
+      <tbody> (cuerpo de la tabla)
+      <tfoot> (pie de la tabla) -->
+    <!-- Le ponemos un atributo border para que se vean las divisiones de la tabla
+      (lo ideal es hacerlo con CSS y no usar el atributo border) -->
+    <table border="1">
+      <thead>
+        <!-- Cada fila de la tabla se define con la etiqueta <tr> (Table Row) -->
+        <tr>
+          <!-- Las celdas de encabezado de la tabla se definen con la etiqueta <th> (Table Heading)
+            Son celdas como cualquier otra, pero automaticamente se ponen en negritas y centradas
+            (y semánticamente indican un encabezado) -->
+          <th>Motivo</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Las celdas de datos (celdas normales) se definen con la etiqueta <td> (Table Data) -->
+          <td>Inscripcion</td>
+          <td>$130</td>
+        </tr>
+        <tr>
+          <td>Materia</td>
+          <td>$115</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
